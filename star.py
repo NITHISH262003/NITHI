@@ -11,3 +11,5 @@ def closest_number(nums):
     return closest
 nums=[-1,-2,1]
 print(closest_number(nums))
+ print("hello world")
+print("tomorrow holiday")
