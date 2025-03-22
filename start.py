@@ -616,42 +616,6 @@
 #     factorial*=factor
 # print(factorial)
 
-# class SBI:
-#     location="salem"
-#     ceo="Nithishs"
-#     isfc_code="420JKAHSDLBVFK"
-#     def __init__(self,name:str,account_no:int,pin:int,balance:int):
-#         self.name=name
-#         self.balance = balance
-#         self._account_no = account_no
-#         self.__pin = pin
-#         self.transaction = []
-#     def deposit(self,amount:int):
-#         print(f"depositing rs.{amount} into your account")
-#         self.balance+=amount
-#         self.transaction.append(f"deposited rs.{amount}")
-#     def withdraw(self,pin:int,amount:int):
-#         if self.__pin == pin:
-#             if self.balance>amount:
-#                 print(f"{amount}debited")
-#                 self.balance-=amount
-#                 self.transaction.append(f"{amount}debited")
-#             else:
-#                 print("Insufficent balance")
-#         else:
-#             print("Wrong pin")
-#     def display_transactions(self):
-#         for transaction in self.transaction:
-#             print(transaction)
-#             import time 
-#             time.sleep(.5)
-# Nithish=SBI("saranya",17238923,14314,2000)
-# Nithish.deposit(2000)
-# Nithish.deposit(2000)
-# Nithish.deposit(2000)
-# Nithish.deposit(2000)
-# Nithish.withdraw(14314,2000)
-# Nithish.display_transactions()
 
 
 # class nithisfood:
@@ -712,16 +676,508 @@
 # c2=c1.from_diameter(20)
 # print(c2)
 
-def closest_number(nums):
-    a=0
-    closest = nums[0]
-    min_distance = abs(nums[0] - a)
+# def closest_number(nums):
+#     a=0
+#     closest = nums[0]
+#     min_distance = abs(nums[0] - a)
     
-    for num in nums[1:]:
-        distance = abs(num - a)
-        if distance < min_distance or (distance == min_distance and num > closest):
-            closest = num
-            min_distance = distance
-    return closest
-nums=[-1,-2,1]
-print(closest_number(nums))
+#     for num in nums[1:]:
+#         distance = abs(num - a)
+#         if distance < min_distance or (distance == min_distance and num > closest):
+#             closest = num
+#             min_distance = distance
+#     return closest
+# nums=[-1,-2,1]
+# print(closest_number(nums))
+# print(closest_number(nums))
+
+# num=int(input())
+# factorial = 1 
+# for factor in range(1,num+1):
+#     factorial*=factor
+# print(factorial)
+
+
+# def triangales():
+#     num1=int(input())
+#     num2=int(input())
+#     num3=int(input())
+#     if num1==num2 and num1==num3:
+#         print("equilateral")
+#     elif num1 ==num2 or num2==num3 or num1==num3:
+#         print("isosles")
+#     else:
+#         print("scalene")
+# result=triangales()
+# print(result)
+
+
+# name={"nithi":"143","saranya":"134"}
+# uname=input()
+# passw=input()
+# if uname in name:
+#     actual_pass=name[uname]
+#     if actual_pass == passw:
+#         print("succeseefull")
+#     else:
+#         print("worng passw")
+# else:
+#     print("nmae not exists")
+
+# num1=int(input())
+# num2=int(input())
+# num3=int(input())
+# if num1<num2:
+#     if num1<num3:
+#         print("num1 is smaller")
+#     else:
+#         print("num3 is samller")
+# else:
+#     if num2<num3:
+#         print("num2 is smaller")
+#     else:
+#         print("num3 is smaller")
+
+# def factorail():
+#     num=int(input())
+#     factorail=1
+#     for factor in range(1,num+1):
+#         factorail*=factor
+#     print(factorail)
+# factorail()
+
+# count=1
+# while count<=5:
+#     print("python")
+#     count+=1
+
+# num=int(input())
+# start=0
+# while start<=num:
+#     print(num)
+# #     num-=1
+
+# num=int(input())
+# while num!=0:
+#     if num%2==0:
+#         sum=0
+#         while num!=0:
+#             last=num%10
+#             sum+=last
+#             num//=10
+#         print(sum)
+
+
+
+
+# word=input()
+# rev=""
+# index=0
+# while index<len(word):
+#     rev=word[index]+rev
+#     index+=1
+# print(rev)
+
+
+# word=input()
+# index=0
+# lower=""
+# upper=""
+# while index<len(word):
+#     char=word[index]
+#     index+=1
+#     if char.isupper():
+#         upper+=char
+#     else:
+#         lower+=char
+# print(lower)
+# print(upper)
+
+# mix=[12,True,{1,2,3},1+0j,(912,23),'string']
+# mutable=[]
+# immutable=[]
+# index=0
+# while index<len(mix):
+#     char=mix[index]
+#     index+=1
+#     if type(char) in [str,tuple,]:
+#         immutable.append(char)
+#     else:
+#         mutable.append(char)
+# print(immutable)
+# print(mutable)
+
+# items=eval(input())
+# index1=0
+# output=[]
+# while index1<len(items):
+#     item=items[index1]
+#     if type(item)==str:
+#         index2=0
+#         rev=""
+#         while index2<len(item):
+#             char=item[index2]
+#             rev=char+rev
+#             index2+=1
+#             if rev==item:
+#                 output.append(item)
+#     index1+=1
+#     print(output)
+
+# word=input()
+# index=0
+# output={}
+# while index<len(word):
+#     char=word[index]
+#     index+=1
+#     if char not in output:
+# #         output[char]=ord(char)
+# # print(output)
+
+# string=input()
+# index=0
+# output={}
+# while index<len(string):
+#     char=string[index]
+#     index+=1
+#     if char in output:
+#         output[char]+=1
+#     else:
+#         output[char]=1
+# print(output)
+
+
+# words=input()
+# result=words.split()
+# output={}
+# index=0
+# while index<len(result):
+#     char=result[index]
+#     index+=1
+#     if char not in output:
+#         output[char]=len(char)
+# print(output)
+
+# list1 = ['mom','sos','nithish']
+# list2 = []
+
+# index = 0
+# while index < len(list1):
+#     word = list1[index]
+
+#     temp = word[::-1]
+#     if word == temp:
+#         list2.append(word)
+
+#     index +=1
+
+# print(list2)
+
+
+# files= ['start.py','demo.csv','file.py','demo.csv','start.txt']
+# index=0
+# output={}
+# while index<len(files):
+#     file=files[index]
+#     result=file.split('.')
+#     first=result[0]
+#     second=result[1]
+#     index+=1
+#     if second in output:
+#         output[second]+=[first]
+#     else:
+#         output[second]=[first]
+# print(output)
+
+
+# dict={"a":12,"b":134,"c":456,"d":95}
+# output={}
+# for key in dict:
+#     value=dict[key]
+#     output[value]=key
+# print(output)
+
+
+# series=[0,1]
+# num=int(input())
+# if num==1:
+#     print(series[0])
+# elif num==2:
+#     print(series)
+# else:
+#     for _ in range(num-2):
+#         fib=series[-1]+series[-2]
+#         series.append(fib)
+#     print(series)
+
+# a=12
+# b=23
+# a,b=b,a
+# print(a,b).##swap numbers
+
+
+# num=[1,2,3,4]
+# output=[]
+# for nums in num:
+#     if nums %2 == 0:
+#         sum=nums-1
+#         output.append(sum)
+#     else:
+#         sum=nums+1
+#         output.append(sum)
+# print(output)
+
+
+# num=[1,2,3,4,5,6]
+# output=[]
+# rev=num[::-1]
+# for square in rev:
+#     result=square**2
+#     output.append(result)
+# print(output)
+# output2={}
+# index=0
+# for dict in num:
+#     output2[dict]=output[index]
+#     index+=1
+# print(output2)
+
+# num = 7
+# for row in range(1,num+1):
+#     for col in range(1,num+1):
+#         if (row == 1 and col == 1 ) or (row==1 and col==num) or (row==num and col==1) or (row==num and col==num):
+#             print(" ",end=" ")
+#         elif row == 1 or row == num or col==1 or col==num: 
+#             print("*",end=" ")
+#         elif row == col:
+#             print('*',end=" ")
+#         else:
+#             print(' ',end=' ')
+
+#     print()
+
+# input=34
+# factorail=1
+# for i in range(1,input+1):
+#     factorail*=i
+# print(factorail)
+
+
+
+
+
+# word='python is easy'
+# output={}
+# result=word.split()
+# index=0
+# while index<len(result):
+#     main=result[index]
+#     rev=main[::-1]
+#     output[rev]=len(main)
+#     index+=1
+# print(output)
+
+# user_input3 = "Python is easy"
+# value = user_input3.split()
+# print(value)
+# final_dict = {}
+# for element in value:
+#     end = len(element)//2
+#     value = element[-1:end-1:-1]
+#     final_dict[value] = len(element)
+# print(final_dict)
+
+
+# items=input()
+# index1=0
+# output=[]
+# while index1<len(items):
+#     item=items[index1]
+#     if type(item)==str:
+#         index2=0
+#         rev=""
+#         while index2<len(item):
+#             char=item[index2]
+#             rev=char+rev
+#             index2+=1
+#             if rev==item:
+#                 output.append(item)
+#     index1+=1
+# print(output)
+
+# num=int(input())
+# temp=num
+# sum=0
+# while num!=0:
+#     last=num%10
+#     sum=sum*10+last
+#     num//=10
+# if sum ==temp:
+#     print("palindrome")
+# else:
+#     print("not palin")
+
+# def check_palin():
+#     words=input()
+#     output=""
+#     index=0
+#     while index<len(words):
+#         rev=words[index]
+#         output=rev+output
+#         index+=1
+#     if output==words:
+#         print("It is Palindrome")
+#     else:
+#         print("not palindrome")
+# check_palin()
+
+
+# num=int(input())
+# temp=num
+# output1=0
+# while num!=0:
+#     factorial=1
+#     output=0
+#     last_digit=num%10
+#     for factor in range(1,last_digit+1):
+#         factorial*=factor
+#     output+=factorial
+#     num//=10
+#     output1+=output
+# if output1==temp:
+#     print("it is strong number")
+# else:
+#     print("not a strong number")
+
+    
+# from math import pi
+# class Circle:
+#     perimeter="2*pi*radius"
+#     area="pi*(radius**2)"
+#     def __init__(self,radius):
+#         self.radius=radius
+#     def get_perimter(self):
+#         perimeter=2*pi*self.radius
+#         return perimeter
+#     def get_area(self):
+#         area=pi*(self.radius**2)
+#         return area
+#     @classmethod
+#     def from_diameter(cls,diameter:int):
+#         radius=diameter/2
+#         return cls(radius)
+# c1=Circle(10)
+# c1=Circle.from_diameter(20)
+# c2=c1.from_diameter(20)
+# print(c1)
+# print(c2)
+
+
+# from abc import ABC,abstractmethod
+# class Car(ABC):
+#     def wiper(self):
+#         print("wipe thr wind shield")
+# @abstractmethod
+# def accelerator(self):
+#     ...
+# @abstractmethod
+# def breaks(self):
+#     ...
+# class Lamboorginic(Car):
+#     def go_home(self):
+#         print("gaya tata good bye")
+#     def accelerator(self):
+#         print("high speed accelertor")
+#     # def breaks(self):
+#     #     print("using breaks")
+# class Maruti(Car):
+#     def accelerator(self):
+#         print("low speed accelerator")
+#     def breaks(self):
+#         print("using break")
+# obj=Car()
+# top=Lamboorginic()
+# top.accelerator()
+# top.breaks()
+
+# num=[52,65,82,96,74,78]....
+# output=[]
+# for nums in num:
+#     result=chr(nums)
+#     output+=result
+# print(output)
+
+
+# num=[1,2,3,4,5]
+# output=[]
+# index=len(num)
+# while index>0:
+#     result=num[index-1]
+#     output.append(result)
+#     index-=1
+# print(output)
+
+
+
+# def even_num(num:int,end:int):
+#     if num%2==0:
+#         if num>end:
+#             return None
+#         else:
+#             print(num)
+#             return even_num(num+1,end)
+#     else:
+#         return even_num(num+1,end)
+# even_num(1,50)
+
+# def start_num(start:int,end:int):
+#     if start>end:
+#         return None
+#     else:
+#         print(start,end="")
+#         return start_num(start+1,end)
+# start_num(1,30)
+
+
+# def ending_num(end:int,start:int=0):
+#     if end<start:
+#         return None
+#     else:
+#         print(end,end='')
+#         return ending_num(end-1,start)
+# ending_num(43)
+
+# def factorial(num:int):
+#     if num==1 or num==0:
+#         return 1
+#     else:
+#         return num*factorial(num-1)
+# print(factorial(5))
+
+
+# collection=[1,2+3j,'hi','52:65','hi==bye']
+# result=[]
+# for collections in collection:
+#     if type(collections) in [int,float,complex,bool]:
+#         ...
+#     else:
+#         output=[]
+#         index=0
+#         while index<len(collections):
+#             last=collections[index]
+#             index+=1
+#             output.append(last)
+#         result.extend(output)
+#     sum=0
+#     for value in result:
+#         if type(value) in [str]:
+#             results=ord(value)
+#             if results>78:
+#                 sum+=results
+#         else:
+#             results=chr(value)
+#             if results>78:
+#                 sum+=results
+# print(sum)
+
+
